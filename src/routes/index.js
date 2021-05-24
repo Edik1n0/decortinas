@@ -5,13 +5,18 @@ router.get('/', (req, res) => {
     res.render('./partials/home');
 });
 
-router.get('/nosotros', (req, res) => {
-    res.render('./layouts/nosotros');
+router.get('/empresa', (req, res) => {
+    res.render('./layouts/empresa');
 });
 
-router.get('/servicios', (req, res) => {
-    res.render('./layouts/servicios');
+// router.get('/productos', (req, res) => {
+//     res.render('./layouts/productos');
+// });
+
+router.get('/contacto', (req, res) => {
+    res.render('./layouts/contacto');
 });
+
 
 router.get('/cookies', (req, res) => {
     res.render('./layouts/cookies');

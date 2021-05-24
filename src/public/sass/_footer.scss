@@ -1,21 +1,26 @@
 .container {
+    
     .footer {
-        padding: 20px 120px 20px 20px;
         margin-top: 60px;
         position: relative;
         width: 100%;
+        display: block;
 
         .container {
             display: flex;
             justify-content: space-around;
+            width: 100%;
 
             .footer__section {
                 text-align: center;
+                width: 32%;
+
                 .footer__section--footer {
                     .address {
                         list-style: none;
                         padding: 0px;
                     }
+
                     .section--social {
                         margin-top: 40px;
                         list-style: none;
@@ -45,9 +50,20 @@
                     text-align: left;
                     display: flex;
                     justify-content: center;
+                    
+                    img {
+                        width: 140px;
+                        opacity: 60%;
+                        &:hover {
+                            transition: all .6s;
+                            opacity: 100%;
+                        }
+                    }
     
                     ul {
+                        width: 40%;
                         list-style: none;
+                        padding: 0px;
                     }
     
                     .link__logo--footer {
@@ -64,16 +80,15 @@
                 }
             }
         }
-    }
-
-    .container {
-        display: flex;
-        justify-content: center;
-        .footer__right {
-            text-align: center;
-            position: relative;
-            width: 540px;
-        }
+        // .container {
+        //     display: flex;
+        //     justify-content: center;
+        //     .footer__right {
+        //         text-align: center;
+        //         position: relative;
+        //         width: 540px;
+        //     }
+        // }
     }
 }
 

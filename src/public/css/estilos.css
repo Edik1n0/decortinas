@@ -1,16 +1,18 @@
 @charset "UTF-8";
 .container .footer {
-  padding: 20px 120px 20px 20px;
   margin-top: 60px;
   position: relative;
   width: 100%;
+  display: block;
 }
 .container .footer .container {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 .container .footer .container .footer__section {
   text-align: center;
+  width: 32%;
 }
 .container .footer .container .footer__section .footer__section--footer .address {
   list-style: none;
@@ -38,8 +40,18 @@
   display: flex;
   justify-content: center;
 }
+.container .footer .container .footer__section .footer__section--body img {
+  width: 140px;
+  opacity: 60%;
+}
+.container .footer .container .footer__section .footer__section--body img:hover {
+  transition: all 0.6s;
+  opacity: 100%;
+}
 .container .footer .container .footer__section .footer__section--body ul {
+  width: 40%;
   list-style: none;
+  padding: 0px;
 }
 .container .footer .container .footer__section .footer__section--body .link__logo--footer {
   display: flex;
@@ -50,15 +62,6 @@
 }
 .container .footer .container .footer__section .footer__section--title {
   margin-bottom: 20px;
-}
-.container .container {
-  display: flex;
-  justify-content: center;
-}
-.container .container .footer__right {
-  text-align: center;
-  position: relative;
-  width: 540px;
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -1015,6 +1018,16 @@
   background: #fff;
 }
 
+.con {
+  margin-top: 60px;
+}
+.con .container {
+  margin-top: 40px;
+}
+.con .container .con__header {
+  text-align: center;
+}
+
 body {
   background: #212529;
   color: #fff;
@@ -1055,7 +1068,8 @@ body {
 .menu_redes .container .mr__social .social__bar .icon-facebook-circled,
 .menu_redes .container .mr__social .social__bar .icon-instagram,
 .menu_redes .container .mr__social .social__bar .icon-whatsapp,
-.menu_redes .container .mr__social .social__bar .icon-location {
+.menu_redes .container .mr__social .social__bar .icon-location,
+.menu_redes .container .mr__social .social__bar .icon-youtube-play {
   width: 36px;
   padding: 6px 4px 4px 4px;
   color: #fff;
@@ -1064,7 +1078,8 @@ body {
 .menu_redes .container .mr__social .social__bar .icon-facebook-circled:hover,
 .menu_redes .container .mr__social .social__bar .icon-instagram:hover,
 .menu_redes .container .mr__social .social__bar .icon-whatsapp:hover,
-.menu_redes .container .mr__social .social__bar .icon-location:hover {
+.menu_redes .container .mr__social .social__bar .icon-location:hover,
+.menu_redes .container .mr__social .social__bar .icon-youtube-play:hover {
   transition: all 0.6s;
   color: #212529;
 }
