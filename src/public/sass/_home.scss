@@ -82,7 +82,7 @@ body {
 
 .sticky-wp {
     position: fixed;
-    right: 8px;
+    right: 12px;
     justify-content: end;
     bottom: 90px;
 
@@ -97,10 +97,13 @@ body {
             width: 20%;
             height: 20%;
         }
+
         p {
             opacity: 0%;
             text-align: center;
-            margin: 20px 10px 10px 20px;
+            margin: 10px;
+            width: 240px;
+            padding-top: 12px;
         }
 
         &:hover {
@@ -321,6 +324,10 @@ a {
             opacity: 80%;
         }
     }
+}
+
+.modal-backdrop {
+    z-index: 0;
 }
 
 .solicitud {

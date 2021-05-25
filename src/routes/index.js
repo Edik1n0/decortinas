@@ -26,8 +26,8 @@ router.get('/privacy', (req, res) => {
     res.render('./layouts/privacy');
 });
 
-router.get('/servicios/diseno', (req, res) => {
-    res.render('./servicios/diseno');
+router.get('/productos/panel-japones', (req, res) => {
+    res.render('./productos/panel-japones');
 });
 
 router.get('/servicios/web', (req, res) => {

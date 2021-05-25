@@ -537,6 +537,27 @@
   margin-left: 30%;
 }
 
+.miga {
+  margin-top: 40px;
+}
+
+.boton__solicitud {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.boton__solicitud .boton_producto {
+  background: #04B2A9;
+  color: #fff;
+  border-radius: 12px 0px;
+  margin: 20px;
+}
+.boton__solicitud .boton_producto:hover {
+  transition: all 0.6s;
+  background: #fff;
+  color: #04B2A9;
+}
+
 @media (min-width: 320px) and (max-width: 374px) {
   .inner__con {
     display: none;
@@ -808,8 +829,8 @@
 
 @font-face {
   font-family: "fontello";
-  src: url("../font/fontello.eot?42099837");
-  src: url("../font/fontello.eot?42099837#iefix") format("embedded-opentype"), url("../font/fontello.woff2?42099837") format("woff2"), url("../font/fontello.woff?42099837") format("woff"), url("../font/fontello.ttf?42099837") format("truetype"), url("../font/fontello.svg?42099837#fontello") format("svg");
+  src: url("../font/fontello.eot?7215372");
+  src: url("../font/fontello.eot?7215372#iefix") format("embedded-opentype"), url("../font/fontello.woff2?7215372") format("woff2"), url("../font/fontello.woff?7215372") format("woff"), url("../font/fontello.ttf?7215372") format("truetype"), url("../font/fontello.svg?7215372#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -819,7 +840,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?42099837#fontello') format('svg');
+    src: url('../font/fontello.svg?7215372#fontello') format('svg');
   }
 }
 */
@@ -950,6 +971,11 @@
 }
 
 /* '' */
+.icon-mail:before {
+  content: "";
+}
+
+/* '' */
 .icon-menu:before {
   content: "";
 }
@@ -994,28 +1020,88 @@
 }
 .section__map .map__body .map__txt--box {
   position: relative;
-  bottom: 440px;
+  bottom: 500px;
   left: 980px;
   z-index: 1;
   background: #04B2A9;
   color: #fff;
   width: 440px;
-  height: 360px;
+  height: 460px;
   padding: 40px;
   text-align: center;
   border-radius: 20px 0px 20px 0px;
 }
-.section__map .map__body .map__txt--box .container a {
-  margin-top: 20px;
-  background: #212529;
-  width: 140px;
-  height: 40px;
-  border-radius: 12px 0px 12px 0px;
-  padding: 4px;
+.section__map .map__body .map__txt--box .container {
+  color: #fff;
 }
-.section__map .map__body .map__txt--box .container a:hover {
+.section__map .map__body .map__txt--box .container .call__section {
+  padding: 0px 0px 0px 96px;
+  list-style: none;
+  text-align: left;
+}
+.section__map .map__body .map__txt--box .container .call__section li {
+  list-style: none;
+  color: #fff;
+}
+.section__map .map__body .map__txt--box .container .call__section li:hover {
+  transition: all 0.6s;
+  color: #212529;
+}
+.section__map .map__body .map__txt--box .container .call__section li a {
+  color: #fff;
+  margin-left: 4px;
+}
+.section__map .map__body .map__txt--box .container .call__section li a:hover {
+  transition: all 0.6s;
+  color: #212529;
+}
+.section__map .map__body .map__txt--box .container .email__map {
+  display: flex;
+  justify-content: center;
+}
+.section__map .map__body .map__txt--box .container .email__map a {
+  color: #fff;
+}
+.section__map .map__body .map__txt--box .container .email__map a:hover {
+  transition: all 0.6s;
+  color: #212529;
+}
+.section__map .map__body .map__txt--box .boton_mapa {
+  background: #212529;
+  color: #04B2A9;
+  border-radius: 12px 0px;
+  padding: 4px;
+  margin-top: 16px;
+}
+.section__map .map__body .map__txt--box .boton_mapa:hover {
   transition: all 0.6s;
   background: #fff;
+}
+.section__map .map__body .map__txt--box .modal .modal-dialog .modal-content {
+  color: #212529;
+}
+.section__map .map__body .map__txt--box .modal .modal-dialog .modal-content .modal-header {
+  text-align: center;
+}
+.section__map .map__body .map__txt--box .modal .modal-dialog .modal-content .modal-body {
+  text-align: left;
+}
+.section__map .map__body .map__txt--box .modal .modal-dialog .modal-content .modal-body .form__req {
+  margin: 40px;
+}
+.section__map .map__body .map__txt--box .modal .modal-dialog .modal-content .modal-body .form__req form {
+  display: block;
+}
+.section__map .map__body .map__txt--box .modal .modal-dialog .modal-content .modal-body .form__req form .section__form {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section__map .map__body .map__txt--box .modal .modal-dialog .modal-content .modal-body .form__req form .mb-3 a {
+  color: #212529;
+}
+.section__map .map__body .map__txt--box .modal .modal-dialog .modal-content .modal-body .form__req form .mb-3 a:hover {
+  transition: all 0.6s;
+  color: #04B2A9;
 }
 
 .con {
@@ -1110,7 +1196,7 @@ body {
 
 .sticky-wp {
   position: fixed;
-  right: 8px;
+  right: 12px;
   justify-content: end;
   bottom: 90px;
 }
@@ -1129,7 +1215,9 @@ body {
 .sticky-wp .enlace-wp p {
   opacity: 0%;
   text-align: center;
-  margin: 20px 10px 10px 20px;
+  margin: 10px;
+  width: 240px;
+  padding-top: 12px;
 }
 .sticky-wp .enlace-wp:hover {
   transition: all 0.6s;
@@ -1331,6 +1419,10 @@ a:hover {
 .users__menu .icono__registrar:hover {
   transition: all 0.6s;
   opacity: 80%;
+}
+
+.modal-backdrop {
+  z-index: 0;
 }
 
 .solicitud {
