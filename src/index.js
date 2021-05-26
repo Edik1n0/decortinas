@@ -28,24 +28,24 @@ app.engine('.hbs', exphbs({
 }));
 app.set('view engine', '.hbs');
 
-app.post('/verify', () => {
-  if (!req.body.captcha) {
-    res.json({ 'msg': 'Captcha token is undefined' });
-  }
-  const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${req.body.captcha}`;
+// app.post('/verify', () => {
+//   if (!req.body.captcha) {
+//     res.json({ 'msg': 'Captcha token is undefined' });
+//   }
+//   const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${req.body.captcha}`;
 
-  request(verifyUrl, (err, response, body) => {
-    if (err) {
-      console.log(err);
-    }
-    body = JSON.parse(body);
-    if (!body.success || body.score < 0.4) {
-      return res.json({ 'msg': 'You might be a robot, sorry!! You are banned!', 'score': body.score });
-    }
+//   request(verifyUrl, (err, response, body) => {
+//     if (err) {
+//       console.log(err);
+//     }
+//     body = JSON.parse(body);
+//     if (!body.success || body.score < 0.4) {
+//       return res.json({ 'msg': 'You might be a robot, sorry!! You are banned!', 'score': body.score });
+//     }
 
-    return res.json({ 'msg': 'You have been verified! You may proceed', 'score': body.score });
-  });
-});
+//     return res.json({ 'msg': 'You have been verified! You may proceed', 'score': body.score });
+//   });
+// });
 
 //Middlewares
 app.use(session({
@@ -72,7 +72,7 @@ app.use((req, res, next) => {
 //Routes
 app.use(require('./routes'));
 app.use(require('./routes/authentication'));
-app.use('/links', require('./routes/links'));
+app.use('/clients', require('./routes/clients'));
 
 //Public
 app.use(express.static(path.join(__dirname, 'public')));

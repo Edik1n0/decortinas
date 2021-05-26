@@ -9,6 +9,10 @@ router.get('/empresa', (req, res) => {
     res.render('./layouts/empresa');
 });
 
+router.get('/clients/add', (req, res) => {
+    res.redirect('/');
+});
+
 // router.get('/productos', (req, res) => {
 //     res.render('./layouts/productos');
 // });
