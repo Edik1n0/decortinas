@@ -104,14 +104,19 @@
             .container {
                 display: block;
                 .footer__section {
+                    width: 100%;
                     .footer__section--body {
                         display: block;
                         text-align: center;
+                        .section--sitemap,
+                        .section--sitemap--dos {
+                            width: 100%;
+                        }
                     }
 
                     .footer__section--footer {
                         .section--social {
-                            display: block;
+                            display: flex;
                         }
                     }
                 }
@@ -132,14 +137,19 @@
             .container {
                 display: block;
                 .footer__section {
+                    width: 100%;
                     .footer__section--body {
                         display: block;
                         text-align: center;
+                        .section--sitemap,
+                        .section--sitemap--dos {
+                            width: 100%;
+                        }
                     }
 
                     .footer__section--footer {
                         .section--social {
-                            display: block;
+                            display: flex;
                         }
                     }
                 }
