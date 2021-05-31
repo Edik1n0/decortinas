@@ -170,14 +170,19 @@
             .container {
                 display: block;
                 .footer__section {
+                    width: 100%;
                     .footer__section--body {
                         display: block;
                         text-align: center;
+                        .section--sitemap,
+                        .section--sitemap--dos {
+                            width: 100%;
+                        }
                     }
 
                     .footer__section--footer {
                         .section--social {
-                            display: block;
+                            display: flex;
                         }
                     }
                 }
@@ -198,14 +203,52 @@
             .container {
                 display: block;
                 .footer__section {
+                    width: 100%;
                     .footer__section--body {
                         display: block;
                         text-align: center;
+                        .section--sitemap,
+                        .section--sitemap--dos {
+                            width: 100%;
+                        }
                     }
 
                     .footer__section--footer {
                         .section--social {
-                            display: block;
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        .footer {
+            padding: 10px;
+            text-align: center;
+            ul {
+                padding: 0px;
+            }
+            
+            .container {
+                display: block;
+                .footer__section {
+                    width: 100%;
+                    .footer__section--body {
+                        display: block;
+                        text-align: center;
+                        .section--sitemap,
+                        .section--sitemap--dos {
+                            width: 100%;
+                        }
+                    }
+
+                    .footer__section--footer {
+                        .section--social {
+                            display: flex;
                         }
                     }
                 }
