@@ -54,6 +54,25 @@
     }
 }
 
+.diseno {
+    .info__producto {
+        .carousel {
+            display: block;
+            img {
+                width: 100%;
+            }
+        }
+
+        .carr__mobile {
+            display: none;
+        }
+
+        .container {
+            text-align: center;
+        }
+    }
+}
+
 .miga {
     margin-top: 40px;
 }
@@ -137,6 +156,22 @@
                             width: 100%;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .diseno {
+        text-align: center;
+        .info__producto {
+            .carousel {
+                display: none;
+            }
+
+            .carr__mobile {
+                display: block;
+                .carousel {
+                    display: block;
                 }
             }
         }

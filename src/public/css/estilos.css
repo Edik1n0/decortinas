@@ -195,12 +195,12 @@
 .highlights .container .high__body .section__links {
   display: flex;
 }
-.highlights .container .high__body .section__links .item__link li {
+.highlights .container .high__body .section__links .group__links .item__link li {
   margin: 40px 10px 10px 10px;
   list-style: none;
   padding-left: 0px;
 }
-.highlights .container .high__body .section__links .item__link li a {
+.highlights .container .high__body .section__links .group__links .item__link li a {
   margin: 10px;
   padding: 10px;
   text-align: center;
@@ -208,26 +208,28 @@
   height: 40px;
   border-radius: 12px 0px 12px 0px;
 }
-.highlights .container .high__body .section__links .item__link li a:hover {
+.highlights .container .high__body .section__links .group__links .item__link li a:hover {
   background: #fff;
 }
-.highlights .container .high__body .section__links .item__link li img {
+.highlights .container .high__body .section__links .group__links .item__link li img {
   position: absolute;
-  top: 80px;
+  display: none;
+  top: 140px;
   right: 80px;
-  width: 420px;
+  width: 640px;
   opacity: 0%;
 }
-.highlights .container .high__body .section__links .item__link li:hover {
+.highlights .container .high__body .section__links .group__links .item__link li:hover {
   transition: all 0.6s;
 }
-.highlights .container .high__body .section__links .item__link li:hover img {
+.highlights .container .high__body .section__links .group__links .item__link li:hover img {
   transition: all 0.8s;
+  display: block;
   opacity: 100%;
 }
 .highlights .otc {
   text-align: center;
-  margin-top: 0px;
+  margin-top: 160px;
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -254,6 +256,15 @@
   .highlights .container .high__desk {
     display: none;
   }
+  .highlights .container .high__body .section__links .group__links .item__link li img {
+    display: none;
+  }
+  .highlights .container .high__body .section__links .group__links .item__link li img:hover {
+    display: none;
+  }
+  .highlights .container .high__body .section__links .group__links .item__link li:hover img {
+    display: none;
+  }
   .highlights .container .high__mob {
     display: block;
     text-align: center;
@@ -262,6 +273,10 @@
   .highlights .container .high__mob img {
     width: 60px;
     margin: 20px;
+    display: none;
+  }
+  .highlights .otc {
+    margin-top: 20px;
   }
 }
 @media (min-width: 410px) and (max-width: 539px) {
@@ -551,6 +566,19 @@
   margin-left: 30%;
 }
 
+.diseno .info__producto .carousel {
+  display: block;
+}
+.diseno .info__producto .carousel img {
+  width: 100%;
+}
+.diseno .info__producto .carr__mobile {
+  display: none;
+}
+.diseno .info__producto .container {
+  text-align: center;
+}
+
 .miga {
   margin-top: 40px;
 }
@@ -612,6 +640,19 @@
   }
   .ser .container .ser__body .container .ser__item .serv__txt {
     width: 100%;
+  }
+
+  .diseno {
+    text-align: center;
+  }
+  .diseno .info__producto .carousel {
+    display: none;
+  }
+  .diseno .info__producto .carr__mobile {
+    display: block;
+  }
+  .diseno .info__producto .carr__mobile .carousel {
+    display: block;
   }
 }
 @media (min-width: 410px) and (max-width: 539px) {
@@ -1188,6 +1229,68 @@ body {
   display: none;
 }
 
+.carousel__desk .cta__bg {
+  position: absolute;
+  width: 560px;
+  height: 120px;
+  top: 50%;
+  left: 32%;
+  color: #fff;
+  text-align: initial;
+  font-size: 34px;
+  padding: 10px 20px 20px 20px;
+  border: 4px solid white;
+  cursor: pointer;
+}
+.carousel__desk .cta__bg .bg__txt {
+  text-align: center;
+}
+.carousel__desk .cta__bg .bg__txt h2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  font-size: 24px;
+}
+.carousel__desk .cta__bg .bg__txt h2 p {
+  margin-bottom: 0px;
+}
+.carousel__desk .cta__bg .bg__txt h2 .modernas {
+  margin-left: 8px;
+  font-size: 74px;
+}
+.carousel__desk .cta__bg .bg__txt .bg__catalogo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  opacity: 0%;
+  background: #64686d2f;
+  width: 320px;
+  height: 34px;
+  margin-left: 100px;
+}
+.carousel__desk .cta__bg .bg__txt .bg__catalogo p {
+  padding-top: 14px;
+  font-size: 20px;
+}
+.carousel__desk .cta__bg .bg__txt .bg__catalogo .icon-right-open {
+  padding-top: 4px;
+  font-size: 20px;
+}
+.carousel__desk .cta__bg:hover {
+  color: #04B2A9;
+  transition: all 0.6s;
+  border: 4px solid #04B2A9;
+  height: 160px;
+}
+.carousel__desk .cta__bg:hover .bg__txt {
+  transition: all 0.6s;
+  background: #64686d2f;
+}
+.carousel__desk .cta__bg:hover .bg__txt .bg__catalogo {
+  opacity: 100%;
+}
+
 .icon-home,
 .icon-briefcase,
 .icon-picture,
@@ -1263,67 +1366,6 @@ body {
 .static__bg .bg__static {
   width: 100%;
   opacity: 76%;
-}
-.static__bg .cta__bg {
-  position: absolute;
-  width: 560px;
-  height: 120px;
-  top: 50%;
-  left: 32%;
-  color: #fff;
-  text-align: initial;
-  font-size: 34px;
-  padding: 10px 20px 20px 20px;
-  border: 4px solid white;
-  cursor: pointer;
-}
-.static__bg .cta__bg .bg__txt {
-  text-align: center;
-}
-.static__bg .cta__bg .bg__txt h2 {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0px;
-  font-size: 24px;
-}
-.static__bg .cta__bg .bg__txt h2 p {
-  margin-bottom: 0px;
-}
-.static__bg .cta__bg .bg__txt h2 .modernas {
-  margin-left: 8px;
-  font-size: 74px;
-}
-.static__bg .cta__bg .bg__txt .bg__catalogo {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  opacity: 0%;
-  background: #64686d2f;
-  width: 320px;
-  height: 34px;
-  margin-left: 100px;
-}
-.static__bg .cta__bg .bg__txt .bg__catalogo p {
-  padding-top: 14px;
-  font-size: 20px;
-}
-.static__bg .cta__bg .bg__txt .bg__catalogo .icon-right-open {
-  padding-top: 4px;
-  font-size: 20px;
-}
-.static__bg .cta__bg:hover {
-  color: #04B2A9;
-  transition: all 0.6s;
-  border: 4px solid #04B2A9;
-  height: 160px;
-}
-.static__bg .cta__bg:hover .bg__txt {
-  transition: all 0.6s;
-  background: #64686d2f;
-}
-.static__bg .cta__bg:hover .bg__txt .bg__catalogo {
-  opacity: 100%;
 }
 
 h1 {
@@ -1574,6 +1616,7 @@ a:hover {
 
   .highlights {
     margin-top: 40px;
+    display: block;
   }
   .highlights .container .high__title {
     margin: 0px;

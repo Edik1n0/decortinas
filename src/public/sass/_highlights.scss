@@ -54,39 +54,43 @@
             .section__links {
                 display: flex;
 
-                .item__link {
-                    li {
-                        margin: 40px 10px 10px 10px;
-                        list-style: none;
-                        padding-left: 0px;
+                .group__links {
+                    .item__link {
+                        li {
+                            margin: 40px 10px 10px 10px;
+                            list-style: none;
+                            padding-left: 0px;
 
-                        a {
-                            margin: 10px;
-                            padding: 10px;
-                            text-align: center;
-                            background: $Aqua;
-                            
-                            height: 40px;
-                            border-radius: 12px 0px 12px 0px;
-    
-                            &:hover {
-                                background: $bl;
+                            a {
+                                margin: 10px;
+                                padding: 10px;
+                                text-align: center;
+                                background: $Aqua;
+
+                                height: 40px;
+                                border-radius: 12px 0px 12px 0px;
+
+                                &:hover {
+                                    background: $bl;
+                                }
                             }
-                        }
 
-                        img {
-                            position: absolute;
-                            top: 80px;
-                            right: 80px;
-                            width: 420px;
-                            opacity: 0%;
-                        }
-
-                        &:hover {
-                            transition: all .6s;
                             img {
-                                transition: all .8s;
-                                opacity: 100%;
+                                position: absolute;
+                                display: none;
+                                top: 140px;
+                                right: 80px;
+                                width: 640px;
+                                opacity: 0%;
+                            }
+
+                            &:hover {
+                                transition: all 0.6s;
+                                img {
+                                    transition: all 0.8s;
+                                    display: block;
+                                    opacity: 100%;
+                                }
                             }
                         }
                     }
@@ -97,7 +101,7 @@
 
     .otc {
         text-align: center;
-        margin-top: 0px;
+        margin-top: 160px;
     }
 }
 
@@ -137,6 +141,29 @@
                 display: none;
             }
 
+            .high__body {
+                .section__links {
+                    .group__links {
+                        .item__link {
+                            li {
+                                img {
+                                    display: none;
+                                    &:hover {
+                                        display: none;
+                                    }
+                                }
+
+                                &:hover {
+                                    img {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             .high__mob {
                 display: block;
                 text-align: center;
@@ -145,8 +172,13 @@
                 img {
                     width: 60px;
                     margin: 20px;
+                    display: none;
                 }
             }
+        }
+
+        .otc {
+            margin-top: 20px;
         }
     }
 }
