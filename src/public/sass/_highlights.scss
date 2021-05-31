@@ -116,6 +116,29 @@
                 display: none;
             }
 
+            .high__body {
+                .section__links {
+                    .group__links {
+                        .item__link {
+                            li {
+                                img {
+                                    display: none;
+                                    &:hover {
+                                        display: none;
+                                    }
+                                }
+
+                                &:hover {
+                                    img {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             .high__mob {
                 display: block;
                 text-align: center;
@@ -124,8 +147,13 @@
                 img {
                     width: 60px;
                     margin: 20px;
+                    display: none;
                 }
             }
+        }
+
+        .otc {
+            margin-top: 20px;
         }
     }
 }
@@ -194,6 +222,29 @@
                 display: none;
             }
 
+            .high__body {
+                .section__links {
+                    .group__links {
+                        .item__link {
+                            li {
+                                img {
+                                    display: none;
+                                    &:hover {
+                                        display: none;
+                                    }
+                                }
+
+                                &:hover {
+                                    img {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             .high__mob {
                 display: block;
                 text-align: center;
@@ -202,8 +253,13 @@
                 img {
                     width: 60px;
                     margin: 20px;
+                    display: none;
                 }
             }
+        }
+
+        .otc {
+            margin-top: 20px;
         }
     }
 }
@@ -219,6 +275,29 @@
                 display: none;
             }
 
+            .high__body {
+                .section__links {
+                    .group__links {
+                        .item__link {
+                            li {
+                                img {
+                                    display: none;
+                                    &:hover {
+                                        display: none;
+                                    }
+                                }
+
+                                &:hover {
+                                    img {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             .high__mob {
                 display: block;
                 text-align: center;
@@ -227,8 +306,66 @@
                 img {
                     width: 60px;
                     margin: 20px;
+                    display: none;
                 }
             }
+        }
+
+        .otc {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .highlights {
+        .container {
+            .high__title {
+                text-align: center;
+            }
+
+            .high__desk {
+                display: none;
+            }
+
+            .high__body {
+                .section__links {
+                    .group__links {
+                        .item__link {
+                            li {
+                                img {
+                                    display: none;
+                                    &:hover {
+                                        display: none;
+                                    }
+                                }
+
+                                &:hover {
+                                    img {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .high__mob {
+                display: block;
+                text-align: center;
+                margin-top: 40px;
+
+                img {
+                    width: 60px;
+                    margin: 20px;
+                    display: none;
+                }
+            }
+        }
+
+        .otc {
+            margin-top: 20px;
         }
     }
 }

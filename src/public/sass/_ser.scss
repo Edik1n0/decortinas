@@ -126,6 +126,22 @@
             }
         }
     }
+
+    .diseno {
+        text-align: center;
+        .info__producto {
+            .carousel {
+                display: none;
+            }
+
+            .carr__mobile {
+                display: block;
+                .carousel {
+                    display: block;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 375px) and (max-width: 409px) {
@@ -210,6 +226,22 @@
             }
         }
     }
+
+    .diseno {
+        text-align: center;
+        .info__producto {
+            .carousel {
+                display: none;
+            }
+
+            .carr__mobile {
+                display: block;
+                .carousel {
+                    display: block;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 540px) and (max-width: 767px) {
@@ -240,6 +272,72 @@
                             width: 100%;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .diseno {
+        text-align: center;
+        .info__producto {
+            .carousel {
+                display: none;
+            }
+
+            .carr__mobile {
+                display: block;
+                .carousel {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .inner__con {
+        display: none;
+    }
+
+    .ser {
+        .container {
+            text-align: center;
+
+            .ser__body {
+                .container {
+                    .basics {
+                        text-align: center;
+                    }
+
+                    .ser__item {
+                        display: block;
+
+                        .serv__img {
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .serv__txt {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .diseno {
+        text-align: center;
+        .info__producto {
+            .carousel {
+                display: none;
+            }
+
+            .carr__mobile {
+                display: block;
+                .carousel {
+                    display: block;
                 }
             }
         }
