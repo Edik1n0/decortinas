@@ -1663,6 +1663,33 @@ a:hover {
   opacity: 80%;
 }
 
+.modal .modal-dialog .modal-content {
+  color: #212529;
+}
+.modal .modal-dialog .modal-content .modal-header {
+  text-align: center;
+}
+.modal .modal-dialog .modal-content .modal-body {
+  text-align: left;
+}
+.modal .modal-dialog .modal-content .modal-body .form__req {
+  margin: 40px;
+}
+.modal .modal-dialog .modal-content .modal-body .form__req form {
+  display: block;
+}
+.modal .modal-dialog .modal-content .modal-body .form__req form .section__form {
+  display: flex;
+  justify-content: space-evenly;
+}
+.modal .modal-dialog .modal-content .modal-body .form__req form .mb-3 a {
+  color: #212529;
+}
+.modal .modal-dialog .modal-content .modal-body .form__req form .mb-3 a:hover {
+  transition: all 0.6s;
+  color: #04B2A9;
+}
+
 .modal-backdrop {
   z-index: 0;
 }

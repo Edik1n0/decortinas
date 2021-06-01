@@ -49,8 +49,8 @@ router.get('/productos/cortina-tradicional', (req, res) => {
     res.render('./productos/cortina-tradicional');
 });
 
-router.get('/productos/enrollables-en-vinilos', (req, res) => {
-    res.render('./productos/enrollables-en-vinilos');
+router.get('/productos/enrollables-en-vinilo', (req, res) => {
+    res.render('./productos/enrollables-en-vinilo');
 });
 
 router.get('/productos/enrollable-blackout', (req, res) => {
