@@ -666,6 +666,24 @@ a {
     .inner__con {
         display: none;
     }
+
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                .modal-body{
+                    .form__req {
+                        width: 100%;
+                        margin: 10px 0px 0px 0px;
+                        form {
+                            .section__form {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 375px) and (max-width: 409px) {
@@ -852,6 +870,24 @@ a {
 
     .inner__con {
         display: none;
+    }
+
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                .modal-body{
+                    .form__req {
+                        width: 100%;
+                        margin: 10px 0px 0px 0px;
+                        form {
+                            .section__form {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1040,6 +1076,24 @@ a {
     .inner__con {
         display: none;
     }
+
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                .modal-body{
+                    .form__req {
+                        width: 100%;
+                        margin: 10px 0px 0px 0px;
+                        form {
+                            .section__form {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 540px) and (max-width: 767px) {
@@ -1227,6 +1281,24 @@ a {
     .inner__con {
         display: none;
     }
+
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                .modal-body{
+                    .form__req {
+                        width: 100%;
+                        margin: 10px 0px 0px 0px;
+                        form {
+                            .section__form {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1413,5 +1485,23 @@ a {
 
     .inner__con {
         display: none;
+    }
+
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                .modal-body{
+                    .form__req {
+                        width: 100%;
+                        margin: 10px 0px 0px 0px;
+                        form {
+                            .section__form {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

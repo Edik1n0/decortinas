@@ -1341,6 +1341,19 @@
   color: #04B2A9;
 }
 
+@media (min-width: 320px) and (max-width: 1024px) {
+  .boton_mapa {
+    background: #212529;
+    color: #04B2A9;
+    border-radius: 12px 0px;
+    padding: 4px;
+    margin-top: 16px;
+  }
+  .boton_mapa:hover {
+    transition: all 0.6s;
+    background: #fff;
+  }
+}
 .con {
   margin-top: 60px;
 }
@@ -1886,6 +1899,14 @@ a:hover {
   .inner__con {
     display: none;
   }
+
+  .modal .modal-dialog .modal-content .modal-body .form__req {
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+  }
+  .modal .modal-dialog .modal-content .modal-body .form__req form .section__form {
+    display: block;
+  }
 }
 @media (min-width: 375px) and (max-width: 409px) {
   .menu_redes {
@@ -2048,6 +2069,14 @@ a:hover {
 
   .inner__con {
     display: none;
+  }
+
+  .modal .modal-dialog .modal-content .modal-body .form__req {
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+  }
+  .modal .modal-dialog .modal-content .modal-body .form__req form .section__form {
+    display: block;
   }
 }
 @media (min-width: 410px) and (max-width: 539px) {
@@ -2212,6 +2241,14 @@ a:hover {
   .inner__con {
     display: none;
   }
+
+  .modal .modal-dialog .modal-content .modal-body .form__req {
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+  }
+  .modal .modal-dialog .modal-content .modal-body .form__req form .section__form {
+    display: block;
+  }
 }
 @media (min-width: 540px) and (max-width: 767px) {
   .menu_redes {
@@ -2375,6 +2412,14 @@ a:hover {
   .inner__con {
     display: none;
   }
+
+  .modal .modal-dialog .modal-content .modal-body .form__req {
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+  }
+  .modal .modal-dialog .modal-content .modal-body .form__req form .section__form {
+    display: block;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .menu_redes {
@@ -2537,6 +2582,14 @@ a:hover {
 
   .inner__con {
     display: none;
+  }
+
+  .modal .modal-dialog .modal-content .modal-body .form__req {
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+  }
+  .modal .modal-dialog .modal-content .modal-body .form__req form .section__form {
+    display: block;
   }
 }
 
