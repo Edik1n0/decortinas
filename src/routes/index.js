@@ -29,68 +29,72 @@ router.get('/privacy', (req, res) => {
     res.render('./layouts/privacy');
 });
 
-router.get('/productos/panel-japones', (req, res) => {
+router.get('/panel-japones', (req, res) => {
     res.render('./productos/panel-japones');
 });
 
-router.get('/productos/bambulita', (req, res) => {
+router.get('/bambulita', (req, res) => {
     res.render('./productos/bambulita');
 });
 
-router.get('/productos/cortina-onda-perfecta', (req, res) => {
+router.get('/cortina-onda-perfecta', (req, res) => {
     res.render('./productos/cortina-onda-perfecta');
 });
 
-router.get('/productos/cortina-romana', (req, res) => {
+router.get('/cortina-romana', (req, res) => {
     res.render('./productos/cortina-romana');
 });
 
-router.get('/productos/cortina-tradicional', (req, res) => {
+router.get('/cortina-tradicional', (req, res) => {
     res.render('./productos/cortina-tradicional');
 });
 
-router.get('/productos/enrollables-en-vinilo', (req, res) => {
+router.get('/enrollables-en-vinilo', (req, res) => {
     res.render('./productos/enrollables-en-vinilo');
 });
 
-router.get('/productos/enrollable-blackout', (req, res) => {
+router.get('/enrollable-blackout', (req, res) => {
     res.render('./productos/enrollable-blackout');
 });
 
-router.get('/productos/papel-de-colgadura', (req, res) => {
+router.get('/papel-de-colgadura', (req, res) => {
     res.render('./productos/papel-de-colgadura');
 });
 
-router.get('/productos/peliculas-para-vidrios', (req, res) => {
+router.get('/peliculas-para-vidrios', (req, res) => {
     res.render('./productos/peliculas-para-vidrios');
 });
 
-router.get('/productos/pergolas', (req, res) => {
+router.get('/pergolas', (req, res) => {
     res.render('./productos/pergolas');
 });
 
-router.get('/productos/persiana-en-aluminio', (req, res) => {
+router.get('/persiana-en-aluminio', (req, res) => {
     res.render('./productos/persiana-en-aluminio');
 });
 
-router.get('/productos/persiana-enrollable', (req, res) => {
+router.get('/persiana-enrollable', (req, res) => {
     res.render('./productos/persiana-enrollable');
 });
 
-router.get('/productos/persiana-vertical', (req, res) => {
+router.get('/persiana-vertical', (req, res) => {
     res.render('./productos/persiana-vertical');
 });
 
-router.get('/productos/persianas-estampadas', (req, res) => {
+router.get('/persianas-estampadas', (req, res) => {
     res.render('./productos/persianas-estampadas');
 });
 
-router.get('/productos/sheer-elegance', (req, res) => {
+router.get('/sheer-elegance', (req, res) => {
     res.render('./productos/sheer-elegance');
 });
 
-router.get('/productos/toldos', (req, res) => {
+router.get('/toldos', (req, res) => {
     res.render('./productos/toldos');
+});
+
+router.get('/cortina-hospitalaria', (req, res) => {
+    res.render('./productos/cortina-hospitalaria');
 });
 
 
