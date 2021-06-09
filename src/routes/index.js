@@ -17,6 +17,16 @@ router.get('/clients/add', (req, res) => {
 //     res.render('./layouts/productos');
 // });
 
+
+
+router.get('/videoblog/blog-detalle', (req, res) => {
+    res.render('./partials/blog-detalle');
+});
+
+router.get('/videoblog', (req, res) => {
+    res.render('./layouts/videoblog');
+});
+
 router.get('/contacto', (req, res) => {
     res.render('./layouts/contacto');
 });
