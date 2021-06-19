@@ -675,11 +675,49 @@
   margin-left: 30%;
 }
 
+.diseno {
+  margin-bottom: 80px;
+}
+.diseno .info__producto {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  margin-top: 40px;
+}
+.diseno .info__producto .product__img {
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  cursor: pointer;
+}
+.diseno .info__producto .product__img .imgp-producto {
+  width: 60%;
+}
+.diseno .info__producto .product__txt {
+  width: 45%;
+  display: block;
+  padding: 20px;
+}
+.diseno .info__producto .modal .modal-body {
+  display: flex;
+  justify-content: center;
+}
+.diseno .info__producto .modal .modal-body img {
+  width: 60%;
+}
 .diseno .info__producto .carousel {
   display: block;
 }
 .diseno .info__producto .carousel img {
   width: 100%;
+}
+.diseno .info__producto .carousel .modal-body {
+  display: flex;
+  justify-content: center;
+}
+.diseno .info__producto .carousel .modal-body .foto-modal {
+  width: 40%;
 }
 .diseno .info__producto .carr__mobile {
   display: none;
@@ -709,7 +747,7 @@
   color: #04B2A9;
 }
 
-@media (min-width: 320px) and (max-width: 374px) {
+@media (min-width: 320px) and (max-width: 1024px) {
   .inner__con {
     display: none;
   }
@@ -733,141 +771,16 @@
   .diseno {
     text-align: center;
   }
-  .diseno .info__producto .carousel {
-    display: none;
-  }
-  .diseno .info__producto .carr__mobile {
+  .diseno .info__producto {
     display: block;
   }
-  .diseno .info__producto .carr__mobile .carousel {
-    display: block;
-  }
-}
-@media (min-width: 375px) and (max-width: 409px) {
-  .inner__con {
-    display: none;
-  }
-
-  .ser .container {
-    text-align: center;
-  }
-  .ser .container .ser__body .container .basics {
-    text-align: center;
-  }
-  .ser .container .ser__body .container .ser__item {
-    display: block;
-  }
-  .ser .container .ser__body .container .ser__item .serv__img img {
+  .diseno .info__producto .product__img,
+.diseno .info__producto .product__txt {
     width: 100%;
+    margin-bottom: 40px;
   }
-  .ser .container .ser__body .container .ser__item .serv__txt {
+  .diseno .info__producto .modal .modal-body img {
     width: 100%;
-  }
-
-  .diseno {
-    text-align: center;
-  }
-  .diseno .info__producto .carousel {
-    display: none;
-  }
-  .diseno .info__producto .carr__mobile {
-    display: block;
-  }
-  .diseno .info__producto .carr__mobile .carousel {
-    display: block;
-  }
-}
-@media (min-width: 410px) and (max-width: 539px) {
-  .inner__con {
-    display: none;
-  }
-
-  .ser .container {
-    text-align: center;
-  }
-  .ser .container .ser__body .container .basics {
-    text-align: center;
-  }
-  .ser .container .ser__body .container .ser__item {
-    display: block;
-  }
-  .ser .container .ser__body .container .ser__item .serv__img img {
-    width: 100%;
-  }
-  .ser .container .ser__body .container .ser__item .serv__txt {
-    width: 100%;
-  }
-
-  .diseno {
-    text-align: center;
-  }
-  .diseno .info__producto .carousel {
-    display: none;
-  }
-  .diseno .info__producto .carr__mobile {
-    display: block;
-  }
-  .diseno .info__producto .carr__mobile .carousel {
-    display: block;
-  }
-}
-@media (min-width: 540px) and (max-width: 767px) {
-  .inner__con {
-    display: none;
-  }
-
-  .ser .container {
-    text-align: center;
-  }
-  .ser .container .ser__body .container .basics {
-    text-align: center;
-  }
-  .ser .container .ser__body .container .ser__item {
-    display: block;
-  }
-  .ser .container .ser__body .container .ser__item .serv__img img {
-    width: 100%;
-  }
-  .ser .container .ser__body .container .ser__item .serv__txt {
-    width: 100%;
-  }
-
-  .diseno {
-    text-align: center;
-  }
-  .diseno .info__producto .carousel {
-    display: none;
-  }
-  .diseno .info__producto .carr__mobile {
-    display: block;
-  }
-  .diseno .info__producto .carr__mobile .carousel {
-    display: block;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .inner__con {
-    display: none;
-  }
-
-  .ser .container {
-    text-align: center;
-  }
-  .ser .container .ser__body .container .basics {
-    text-align: center;
-  }
-  .ser .container .ser__body .container .ser__item {
-    display: block;
-  }
-  .ser .container .ser__body .container .ser__item .serv__img img {
-    width: 100%;
-  }
-  .ser .container .ser__body .container .ser__item .serv__txt {
-    width: 100%;
-  }
-
-  .diseno {
-    text-align: center;
   }
   .diseno .info__producto .carousel {
     display: none;
