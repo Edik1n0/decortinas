@@ -83,6 +83,29 @@
         }
 
         .modal {
+            background: #000000e3;
+            .modal-dialog {
+                .modal-content {
+                    background-color: unset;
+                    color: white;
+                    border: 0px;
+
+                    .modal-header,
+                    .modal-footer {
+                        justify-content: space-around;
+                        .icon-cancel {
+                            font-size: 20px;
+                            color: white;
+
+                            &:hover {
+                                transition: all .6s;
+                                color: $Aqua;
+                            }
+                        }
+                        border: 0px;
+                    }
+                }
+            }
 
             .modal-body {
                 display: flex;
@@ -93,28 +116,28 @@
             }
         }
 
-        .carousel {
-            display: block;
-            img {
-                width: 100%;
-            }
+        // .carousel {
+        //     display: block;
+        //     img {
+        //         width: 100%;
+        //     }
 
-            .modal-body {
-                display: flex;
-                justify-content: center;
-                .foto-modal {
-                    width: 40%;
-                }
-            }
-        }
+        //     .modal-body {
+        //         display: flex;
+        //         justify-content: center;
+        //         .foto-modal {
+        //             width: 40%;
+        //         }
+        //     }
+        // }
 
-        .carr__mobile {
-            display: none;
-        }
+        // .carr__mobile {
+        //     display: none;
+        // }
 
-        .container {
-            text-align: center;
-        }
+        // .container {
+        //     text-align: center;
+        // }
     }
 }
 

@@ -13,75 +13,77 @@
 
 {{!-- Cuerpo --}}
 <div class="diseno">
-    <div class="container">
-        <div class="diseno__title">
-            <h1>Pergolas | De Cortinas e Interiores</h1>
-            <p>
-                <i>En tu casa o en oficina, siempre se verán elegantes</i>
-            </p>
-        </div>
-    </div>
-
     <div class="info__producto">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/img/productos/pergolas/decortinas-pergolas-desk.jpg"
-                        class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <div class="product__img">
+            <img class="imgp-producto" src="/img/productos/pergolas/modal/decortinas-pergolas-b.jpg" alt=""
+                data-bs-toggle="modal" data-bs-target="#modalPer">
         </div>
 
-        <div class="carr__mobile">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
+        <div class="product__txt">
+            <div class="diseno__title">
+                <div class="diseno__title">
+                    <h1>Pergolas | De Cortinas e Interiores</h1>
+                    <p>
+                        <i>En tu casa o en oficina, siempre se verán elegantes</i>
+                    </p>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/img/productos/pergolas/decortinas-pergolas-mob.jpg"
-                            class="d-block w-100" alt="...">
+            </div>
+            <div class="container">
+                <p class="ser__subtitle">
+                    Incorporan tejadillo y brazos cruzados de acuerdo a las dimensiones del toldo, y sistema patentado
+                    de
+                    barra triangular, que brinda mayor estabilidad en grandes áreas.<br><br>
+                    Cuenta con un diseño compacto, duradero y perfecto para cubrir espacios exteriores. Es un elemento
+                    decorativo para fachadas, el cual disminuye el paso de los rayos UV ocasionados por el sol; además
+                    se
+                    adapta a diferentes espacios. Es ideal tanto para lugares residenciales como para establecimientos
+                    comerciales.
+                </p>
+
+                {{> formulario }}
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalPer" aria-hidden="true" aria-labelledby="modalPer" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPer">Pergolas</h5>
+                        <a href="" data-bs-dismiss="modal" aria-label="Close" class="icon-cancel"></a>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/img/productos/pergolas/modal/decortinas-pergolas-b.jpg" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="carousel-control-next" data-bs-target="#modalPer2" data-bs-toggle="modal"
+                            data-bs-dismiss="modal">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
 
-        <div class="container">
-            <p class="ser__subtitle">
-                Incorporan tejadillo y brazos cruzados de acuerdo a las dimensiones del toldo, y sistema patentado de
-                barra triangular, que brinda mayor estabilidad en grandes áreas.<br><br>
-                Cuenta con un diseño compacto, duradero y perfecto para cubrir espacios exteriores. Es un elemento
-                decorativo para fachadas, el cual disminuye el paso de los rayos UV ocasionados por el sol; además se
-                adapta a diferentes espacios. Es ideal tanto para lugares residenciales como para establecimientos
-                comerciales.
-            </p>
-
-            {{> formulario }}
+        <div class="modal fade" id="modalPer2" aria-hidden="true" aria-labelledby="modalPer2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPer2">Pergolas 2</h5>
+                        <a href="" data-bs-dismiss="modal" aria-label="Close" class="icon-cancel"></a>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/img/productos/pergolas/modal/decortinas-pergolas-a.jpg" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="carousel-control-prev" data-bs-target="#modalPer" data-bs-toggle="modal"
+                            data-bs-dismiss="modal">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

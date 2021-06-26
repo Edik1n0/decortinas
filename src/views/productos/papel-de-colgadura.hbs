@@ -13,65 +13,19 @@
 
 {{!-- Cuerpo --}}
 <div class="diseno">
-    <div class="container">
-        <div class="diseno__title">
-            <h1>Papel de Colgadura | De Cortinas e Interiores</h1>
-            <p>
-                <i>En tu casa o en oficina, siempre se verán elegantes</i>
-            </p>
-        </div>
-    </div>
-
     <div class="info__producto">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/img/productos/papel-de-colgadura/decortinas-papel-colgadura-desk-a.jpg"
-                        class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <div class="product__img">
+            <img class="imgp-producto" src="/img/productos/papel-de-colgadura/modal/decortinas-colgadura-b.jpg" alt=""
+                data-bs-toggle="modal" data-bs-target="#modalPC">
         </div>
 
-        <div class="carr__mobile">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/img/productos/papel-de-colgadura/decortinas-papel-colgadura-mob-a.jpg"
-                            class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+        <div class="product__txt">
+            <div class="diseno__title">
+                <h1>Papel de Colgadura | De Cortinas e Interiores</h1>
+                <p>
+                    <i>En tu casa o en oficina, siempre se verán elegantes</i>
+                </p>
             </div>
-        </div>
-
-        <div class="container">
             <p class="ser__subtitle">
                 Diseñado especialmente para cubrir puertaventanas o ventanas de piso a techo. Consiste en un delgado
                 riel de aluminio que cuenta con un diseño de vías. Existen rieles de 2, 3, 4, 5 y 6 vías. En cada
@@ -79,6 +33,48 @@
             </p>
 
             {{> formulario }}
+        </div>
+
+        <div class="modal fade" id="modalPC" aria-hidden="true" aria-labelledby="modalPC" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPC">Papel de Colgadura</h5>
+                        <a href="" data-bs-dismiss="modal" aria-label="Close" class="icon-cancel"></a>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/img/productos/papel-de-colgadura/modal/decortinas-colgadura-b.jpg" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="carousel-control-next" data-bs-target="#modalPC2" data-bs-toggle="modal"
+                            data-bs-dismiss="modal">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalPC2" aria-hidden="true" aria-labelledby="modalPC2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPC2">Papel de Colgadura 2</h5>
+                        <a href="" data-bs-dismiss="modal" aria-label="Close" class="icon-cancel"></a>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/img/productos/papel-de-colgadura/modal/decortinas-colgadura-a.jpg" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="carousel-control-prev" data-bs-target="#modalPC" data-bs-toggle="modal"
+                            data-bs-dismiss="modal">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

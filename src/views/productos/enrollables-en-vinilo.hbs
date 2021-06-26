@@ -13,86 +13,77 @@
 
 {{!-- Cuerpo --}}
 <div class="diseno">
-    <div class="container">
-        <div class="diseno__title">
-            <h1>Enrollables en Vinilo | De Cortinas e Interiores</h1>
-            <p>
-                <i>En tu casa o en oficina, siempre se verán elegantes</i>
-            </p>
-        </div>
-    </div>
-
     <div class="info__producto">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/img/productos/enrollables-en-vinilos/desk/decortinas-enrollables-en-vinilos-desk-a.jpg"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="/img/productos/enrollables-en-vinilos/desk/decortinas-enrollables-en-vinilos-desk-b.jpg"
-                        class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <div class="product__img">
+            <img class="imgp-producto" src="/img/productos/enrollables-en-vinilos/modal/decortinas-vinilos-a.jpg" alt=""
+                data-bs-toggle="modal" data-bs-target="#modalCV">
         </div>
 
-        <div class="carr__mobile">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
+        <div class="product__txt">
+            <div class="diseno__title">
+                <div class="diseno__title">
+                    <h1>Enrollables en Vinilo | De Cortinas e Interiores</h1>
+                    <p>
+                        <i>En tu casa o en oficina, siempre se verán elegantes</i>
+                    </p>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/img/productos/enrollables-en-vinilos/mob/decortinas-enrollables-en-vinilos-mob-a.jpg"
-                            class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/img/productos/enrollables-en-vinilos/mob/decortinas-enrollables-en-vinilos-mob-b.jpg"
-                            class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </div>
+            <div class="container">
+                <p class="ser__subtitle">
+                    Enrollable Protect, como parte de las medidas de bioseguridad para la reactivación económica.<br>
+                    <br>Presentamos enrollable protect en tela Blomter para división de espacios, esta tela se
+                    caracteriza
+                    por
+                    su transparencia, permitiendo la visibilidad, el uso de la luz y la proteccion de las personas
+                    siendo
+                    una barrera entre ellas, repele líquidos, es discreto, permite fácil limpieza con productos
+                    desinfectantes, especialmente adecuado para garantizar una proteccion casi imperceptible.
+                </p>
+
+                {{> formulario }}
             </div>
         </div>
 
-        <div class="container">
-            <p class="ser__subtitle">
-                Enrollable Protect, como parte de las medidas de bioseguridad para la reactivación económica.<br>
-                <br>Presentamos enrollable protect en tela Blomter para división de espacios, esta tela se caracteriza por
-                su transparencia, permitiendo la visibilidad, el uso de la luz y la proteccion de las personas siendo
-                una barrera entre ellas, repele líquidos, es discreto, permite fácil limpieza con productos
-                desinfectantes, especialmente adecuado para garantizar una proteccion casi imperceptible.
-            </p>
+        <div class="modal fade" id="modalCV" aria-hidden="true" aria-labelledby="modalCV" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCV">Cortinas en Vinilos</h5>
+                        <a href="" data-bs-dismiss="modal" aria-label="Close" class="icon-cancel"></a>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/img/productos/enrollables-en-vinilos/modal/decortinas-vinilos-a.jpg" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="carousel-control-next" data-bs-target="#modalCV2" data-bs-toggle="modal"
+                            data-bs-dismiss="modal">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            {{> formulario }}
+        <div class="modal fade" id="modalCV2" aria-hidden="true" aria-labelledby="modalCV2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCV2">Cortinas en Vinilos 2</h5>
+                        <a href="" data-bs-dismiss="modal" aria-label="Close" class="icon-cancel"></a>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/img/productos/enrollables-en-vinilos/modal/decortinas-vinilos-b.jpg" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="carousel-control-prev" data-bs-target="#modalCV" data-bs-toggle="modal"
+                            data-bs-dismiss="modal">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
