@@ -1,5 +1,4 @@
 .container {
-    
     .footer {
         margin-top: 60px;
         position: relative;
@@ -27,7 +26,6 @@
                         display: flex;
                         justify-content: space-between;
                         li {
-
                             a {
                                 font-size: 42px;
                             }
@@ -37,7 +35,7 @@
                                     width: 60px;
                                     margin: 8px;
                                     &:hover {
-                                        transition: all .6s;
+                                        transition: all 0.6s;
                                         opacity: 80%;
                                     }
                                 }
@@ -45,27 +43,27 @@
                         }
                     }
                 }
-    
+
                 .footer__section--body {
                     text-align: left;
                     display: flex;
                     justify-content: center;
-                    
+
                     img {
                         width: 140px;
                         opacity: 60%;
                         &:hover {
-                            transition: all .6s;
+                            transition: all 0.6s;
                             opacity: 100%;
                         }
                     }
-    
+
                     ul {
                         width: 40%;
                         list-style: none;
                         padding: 0px;
                     }
-    
+
                     .link__logo--footer {
                         display: flex;
                         justify-content: center;
@@ -74,23 +72,30 @@
                         }
                     }
                 }
-    
+
+                .partner {
+                    margin: 20px;
+                    a {
+                        .logo__dev {
+                            width: 40px;
+                            margin-left: 10px;
+                            opacity: 80%;
+                            &:hover {
+                                transition: all .6s;
+                                opacity: 100%;
+                            }
+                        }
+                    }
+                }
+
                 .footer__section--title {
                     margin-bottom: 20px;
                 }
             }
         }
-        // .container {
-        //     display: flex;
-        //     justify-content: center;
-        //     .footer__right {
-        //         text-align: center;
-        //         position: relative;
-        //         width: 540px;
-        //     }
-        // }
     }
 }
+
 
 @media (min-width: 320px) and (max-width: 374px) {
     .container {
@@ -100,11 +105,12 @@
             ul {
                 padding: 0px;
             }
-            
+
             .container {
                 display: block;
                 .footer__section {
                     width: 100%;
+
                     .footer__section--body {
                         display: block;
                         text-align: center;
@@ -133,7 +139,7 @@
             ul {
                 padding: 0px;
             }
-            
+
             .container {
                 display: block;
                 .footer__section {
@@ -166,7 +172,7 @@
             ul {
                 padding: 0px;
             }
-            
+
             .container {
                 display: block;
                 .footer__section {
@@ -199,7 +205,7 @@
             ul {
                 padding: 0px;
             }
-            
+
             .container {
                 display: block;
                 .footer__section {
@@ -232,7 +238,7 @@
             ul {
                 padding: 0px;
             }
-            
+
             .container {
                 display: block;
                 .footer__section {

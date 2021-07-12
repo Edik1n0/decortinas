@@ -60,6 +60,18 @@
 .container .footer .container .footer__section .footer__section--body .link__logo--footer .logo__footer {
   width: 120px;
 }
+.container .footer .container .footer__section .partner {
+  margin: 20px;
+}
+.container .footer .container .footer__section .partner a .logo__dev {
+  width: 40px;
+  margin-left: 10px;
+  opacity: 80%;
+}
+.container .footer .container .footer__section .partner a .logo__dev:hover {
+  transition: all 0.6s;
+  opacity: 100%;
+}
 .container .footer .container .footer__section .footer__section--title {
   margin-bottom: 20px;
 }
