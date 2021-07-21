@@ -107,6 +107,10 @@ router.get('/cortina-hospitalaria', (req, res) => {
     res.render('./productos/cortina-hospitalaria');
 });
 
+router.get('/persiana-para-exteriores', (req, res) => {
+    res.render('./productos/persiana-para-exteriores');
+});
+
 
 router.get('/sitemap', (req, res) => {
     res.render('layouts/sitemap');
